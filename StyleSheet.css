@@ -52,7 +52,7 @@ header nav{
 
 /* introSection */
 #introSection {
-    min-height: 900px;
+    min-width: 900px;
     background-image: url(img/coffee.jpg);
     background-position: center center;
     background-repeat: no-repeat;
