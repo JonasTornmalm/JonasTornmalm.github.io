@@ -9,6 +9,7 @@
 
 /* Global */
 
+
 .container-1 {
     width: 80%;
     margin: auto;
@@ -16,36 +17,26 @@
 }
 
 .container-2 {
+    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
-.box-3 {
-    background: #F4F4F6;
-    width: 660px;
-    min-height: 800px;
-    line-height: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: black;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+.container-3 {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.box-4 {
-    width: 500px;
-    background-color: #F4F4F6;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.box-4 img {
-    max-width: 100%;
-    height: auto;
+.container-4 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    overflow: hidden;
 }
 
 ul {
@@ -100,8 +91,90 @@ header li{
     font-size: 40px;
 }
 
-/* aboutSection */
+/* About section */
 
+.box-1 {
+    background: #F4F4F6;
+    width: 660px;
+    min-height: 800px;
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.box-2 {
+    width: 500px;
+    background-color: #F4F4F6;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box-2 img {
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: 15px;
+}
+
+/* Skills section */
+
+#Skills{
+    margin: auto;
+    max-width: 1250px;
+}
+
+.container-3 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-3 h1 {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container-3 p {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.box-3 {
+    flex-basis: 30%;
+}
+
+.box-4 {
+    flex-basis: 30%;
+}
+
+.box-5 {
+    flex-basis: 30%;
+}
+
+/* Contact section */
+
+.box-6 {
+    background-image: url(img/mail.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 70px;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    width: 1120px;
+}
+.box-6 h1{
+    font-size: 50px;
+}
+.box-6 h3{
+    font-size: 30px;
+}
 
 /* Responsive Rules */
 
@@ -129,10 +202,21 @@ header li{
     .container-2{
         flex-direction: column;
     }
-    .box-3{
+    .box-1{
         width: auto;
     }
-    .box-4 {
-
+    .container-3{
+        flex-direction: column;
     }
+    .box-6{
+        margin-top: 0;
+    }
+    .box-6 h1 {
+        font-size: 35px;
+    }
+
+    .box-6 h3 {
+        font-size: 18px;
+    }
+
 }
