@@ -44,6 +44,10 @@ ul {
     padding: 0;
 }
 
+.orange {
+    color: #FF8552;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -94,28 +98,45 @@ header li{
 /* About section */
 
 .box-1 {
-    background: #F4F4F6;
+    background-image: linear-gradient(to bottom, #F4F4F6, #ffffff);
     width: 660px;
     min-height: 800px;
     line-height: 30px;
     padding-left: 50px;
     padding-right: 50px;
     color: black;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+
+    border-left: ridge 1px;
+    border-top: ridge 1px;
+}
+
+.box-1 h1 {
+    padding-top: 15px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.box-1 h3 {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.box-1 p{
+    font-style: italic;
 }
 
 .box-2 {
     width: 500px;
-    background-color: #F4F4F6;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    background-image: linear-gradient(to bottom, #F4F4F6, #ffffff);
+
+
+    border-right: ridge 1px;
+    border-top: ridge 1px;
 }
 
 .box-2 img {
     max-width: 100%;
     height: auto;
-    border-top-right-radius: 15px;
 }
 
 /* Skills section */
@@ -134,13 +155,21 @@ header li{
 }
 
 .container-3 h1 {
+    margin-top: 0;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.container-3 p {
+.container-3 h2{
     text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.container-3 p {
+    text-align: left;
+    font-size: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -148,13 +177,22 @@ header li{
 .box-3 {
     flex-basis: 30%;
 }
+.box-3 h2 {
+    color: #3D2645;
+}
 
 .box-4 {
     flex-basis: 30%;
 }
+.box-4 h2 {
+    color: darkorange;
+}
 
 .box-5 {
     flex-basis: 30%;
+}
+.box-5 h2 {
+    color: darkblue;
 }
 
 /* Contact section */
@@ -185,16 +223,13 @@ header li{
         background-size: 500px;
         background-position: bottom;
     }
-    #introSection h1 {
-        font-size: 25px;
-    }
-    #introSection .container-1{
-
-    }
-    #introSection .container-1{
+    #introSection .container-1 {
         margin-bottom: 50px;
         margin-top: 30px;
         height: 400px;
+    }
+    #introSection h1 {
+        font-size: 25px;
     }
     header li{
         padding: 0 15px 0 0px;
@@ -202,8 +237,12 @@ header li{
     .container-2{
         flex-direction: column;
     }
-    .box-1{
+    .box-1 {
         width: auto;
+    }
+    .box-2{
+        background-image: none;
+        border: none;
     }
     .container-3{
         flex-direction: column;
